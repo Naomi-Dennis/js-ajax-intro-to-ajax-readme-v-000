@@ -3,7 +3,6 @@ function getRepositories() {
   req.addEventListener('load', showRepositories)
   req.open('GET', 'https://api.github.com/users/octocat/repos');
   req.send();
-  showRepositories();
 }
 
 function showRepositories() {
